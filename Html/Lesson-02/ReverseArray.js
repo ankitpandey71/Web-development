@@ -4,7 +4,7 @@ var arrayi = [];
 function rev() {
   var temp;
   for (i = 0; i <= arr.length; i++) {
-    if (temp < arr(i)) {
+    if (arr[i] < arr(i)) {
       arrayi.push(arr(i));
     }
   }
