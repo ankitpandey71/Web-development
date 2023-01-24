@@ -1,0 +1,11 @@
+var arr = [1, 2, 3, 4, 5];
+
+var arrayi = [];
+function rev() {
+  var temp;
+  for (i = 0; i <= arr.length; i++) {
+    if (temp < arr(i)) {
+      arrayi.push(arr(i));
+    }
+  }
+}
