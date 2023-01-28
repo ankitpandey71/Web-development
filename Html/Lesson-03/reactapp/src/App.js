@@ -1,4 +1,5 @@
 import React from "react";
+import Hooks from "./Components/Hooks";
 
 const Person = (props) => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Person name={"Don"} lastName={"noe"} age={25} />
       <Person name={"Kon"} lastName={"joe"} age={28} />
       <Person name={"JAshhji"} lastName={"moe"} age={21} />
+      <Hooks />
     </div>
   );
 };
