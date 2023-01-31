@@ -13,7 +13,7 @@ const Person = (props) => {
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-slate-800 text-yellow-500">
       <Person name={"John"} lastName={"Doe"} age={27} />
       <Person name={"Don"} lastName={"noe"} age={25} />
       <Person name={"Kon"} lastName={"joe"} age={28} />
