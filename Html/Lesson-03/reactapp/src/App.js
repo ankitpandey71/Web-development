@@ -6,7 +6,7 @@ const Person = (props) => {
     <div>
       <h1 className="bg-slate-600">Name: {props.name}</h1>
       <h1>Last Name: {props.lastName}</h1>
-      <h1>Age: {props.age}</h1> // something
+      <h1>Age: {props.age}</h1>
     </div>
   );
 };
