@@ -4,9 +4,9 @@ import Hooks from "./Components/Hooks";
 const Person = (props) => {
   return (
     <div>
-      <h1>Name: {props.name}</h1>
+      <h1 className="bg-slate-600">Name: {props.name}</h1>
       <h1>Last Name: {props.lastName}</h1>
-      <h1>Age: {props.age}</h1>
+      <h1>Age: {props.age}</h1> // something
     </div>
   );
 };
