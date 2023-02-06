@@ -7,9 +7,9 @@ const reducer = combineReducers({
 
 const initialState = {};
 
-const applyMiddleware = [thunk];
+const middleware = [thunk];
 
-const store = createStore(
+export const store = createStore(
   reducer,
   initialState,
   applyMiddleware(...middleware)
