@@ -9,4 +9,8 @@ const initialState = {};
 
 const applyMiddleware = [thunk];
 
-const store = createStore(reducer, initialState);
+const store = createStore(
+  reducer,
+  initialState,
+  applyMiddleware(...middleware)
+);
