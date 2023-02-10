@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prime Number Finder</title>
+</head>
+
+<body>
+    <h1>Prime Number Finder</h1>
+
+    <p>Enter a number:</p>
+    <input type="text" id="numberInput">
+    <button id="submitButton">Submit</button>
+
+    <p id="resultDisplay"></p>
+
+    <script>
+        const submitButton = document.getElementById("submitButton");
+        const numberInput = document.getElementById("numberInput");
+        const resultDisplay = document.getElementById("resultDisplay");
+
+        submitButton.addEventListener("click", function () {
+            const number = parseInt(numberInput.value);
+            let isPrime = true;
+
+            if (number <= 1) {
+                isPrime = false;
+            } else {
+                for (let i = 2; i < number; i++) {
+                    if (number % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+
+            if (isPrime) {
+                resultDisplay.textContent = `${number} is a prime number.`;
+            } else {
+                resultDisplay.textContent = `${number} is not a prime number.`;
+            }
+        });
+    </script>
+</body>
+
+</html>
